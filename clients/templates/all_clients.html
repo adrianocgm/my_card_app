@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Clients</h1>
+  
+<ul>
+  {% for x in myclients %}
+    <li><a href=client_details/{{ x.id }}"> Name: {{ x.first_name }} {{ x.last_name }} | Card Number: {{ x.card_number }}</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
